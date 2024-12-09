@@ -1,0 +1,23 @@
+{
+  "about-me": [
+    {
+      "id": "detail",
+      "name": "Teo Mücke",
+      "imagePath": "/assets/profile.jpg"
+    }
+  ],
+  "cvs": [
+    {
+      "id": "727d",
+      "employer": "BNC AG",
+      "start": "2023-10-15",
+      "end": "2024-12-09"
+    },
+    {
+      "id": "4ce8",
+      "employer": "DB Schenker",
+      "start": "2018-08-01",
+      "end": "2023-09-30"
+    }
+  ]
+}

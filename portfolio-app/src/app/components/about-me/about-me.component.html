@@ -1,0 +1,26 @@
+<h1>About Me</h1>
+<form #aboutMeForm="ngForm" (ngSubmit)="submit(aboutMeForm)">
+ <input type="text" name="name" [ngModel]="aboutMe?.name" required>
+ <button class="btn" type="submit" [disabled]="aboutMeForm.invalid">save</button>
+</form>
+<img [src]="aboutMe?.imagePath" style="width: 700px; height: auto;">
+
+<div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>Hobbys
+            Rennvelo Fahren
+            Padel
+            </p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
