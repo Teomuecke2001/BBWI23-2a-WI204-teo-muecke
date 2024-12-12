@@ -49,7 +49,7 @@ export class CVComponent implements OnInit {
         }
     }
 
-    deleteCV(id?: number): void {
+    deleteCV(id?: string): void {
         if (id) {
             const confirmedDelete = confirm('do you realy whant to delet the CV entry?');
             if (confirmedDelete) {

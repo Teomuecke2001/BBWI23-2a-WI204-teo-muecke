@@ -3,23 +3,26 @@
  <input type="text" name="name" [ngModel]="aboutMe?.name" required>
  <button class="btn" type="submit" [disabled]="aboutMeForm.invalid">save</button>
 </form>
-<img [src]="aboutMe?.imagePath" style="width: 700px; height: auto;">
+<img [src]="aboutMe?.imagePath"style="width: 700px; height: auto;">
 
 <div class="row">
-    <div class="col s12 m7">
+    <div class="col s12 m3">
       <div class="card">
         <div class="card-image">
           <img src="images/sample-1.jpg">
           <span class="card-title">Card Title</span>
         </div>
         <div class="card-content">
-          <p>Hobbys
-            Rennvelo Fahren
-            Padel
+          <p>Ich heisse Teo Mücke bin 23 Jahre alt. </p>
+          <br>
+          <p style="font-size: 14px; font-weight: bold;">Hobbys<p>
+          <p> Rennvelo Fahren
+          <br>Padel
+          <br>Fitness
+          <br>Fussball
             </p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
         </div>
       </div>
     </div>

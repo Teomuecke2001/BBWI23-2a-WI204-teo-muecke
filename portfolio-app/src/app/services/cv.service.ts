@@ -28,10 +28,14 @@ export class CVService {
   createCV(cv: CV): Observable<CV> {
   return this.http.post<CV>(`/api/cvs/`, cv);
   }
-  updateCV(id: number, cv: CV): Observable<CV> {
+  updateCV(id: string, cv: CV): Observable<CV> {
   return this.http.put<CV>(`/api/cvs/${id}/`, cv);
   }
-  deleteCV(id: number): Observable<void> {
+  deleteCV(id: string, ): Observable<void> {
   return this.http.delete<void>(`/api/cvs/${id}/`);
   }
+  getCVById(id: string, ): Observable<CV> {
+    return this.http.get<CV>('/api/cvs/' + id);
+  }
+
  }

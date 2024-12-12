@@ -3,7 +3,7 @@ export class CV {
     public employer: string,
     public start: number,
     public end?: number,
-    public id?: number
+    public id?: string
     ) {
    
    }
