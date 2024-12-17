@@ -16,11 +16,10 @@
  <button class="btn grey" type="button" (click)="formGroup = undefined">cancel</button>
 </form>
 }
-<a class="btn" [routerLink]="['new']">new</a>
+<a class="btn" [routerLink]="['new']">NEW</a>
 <ul>
  @for (cv of cvs; track cv.employer) {
  <li>{{ cv.employer }} {{ cv.start }} - {{ cv.end }}
- <button class="btn" (click)="select(cv)">edit</button>
  <a class="btn" [routerLink]="[cv.id, 'edit']">EDIT</a>
  <a class="btn red" [routerLink]="[cv.id, 'delete']"> DELETE</a> 
 
